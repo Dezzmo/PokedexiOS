@@ -25,7 +25,10 @@ struct ContentView: View {
                 .tabItem{
                     Image("pokedex")
                 }
-                
+                Text("TypeSearch")
+                    .tabItem{
+                        Image("fire")
+                }
                 
                 
             }
@@ -58,6 +61,8 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+//MARK: - Extensions
+
 extension String {
     func capitalizingFirstLetter() -> String {
         return prefix(1).capitalized + dropFirst()
@@ -65,5 +70,23 @@ extension String {
     
     mutating func capitalizeFirstLetter() {
         self = self.capitalizingFirstLetter()
+    }
+}
+
+extension UINavigationController{
+    override open func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let standardAppearance = UINavigationBarAppearance()
+        standardAppearance.backgroundColor = UIColor(red: 0.60, green: 0.12, blue: 0.25, alpha: 1.00)
+        
+        let scrollEdgeAppearance = UINavigationBarAppearance()
+        scrollEdgeAppearance.backgroundColor = UIColor(red: 0.85, green: 0.27, blue: 0.37, alpha: 1.00)
+        
+        navigationBar.standardAppearance = standardAppearance
+        navigationBar.scrollEdgeAppearance = scrollEdgeAppearance
+        
+        
+        
     }
 }
