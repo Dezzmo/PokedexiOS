@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8749160024902B460055FBA2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874915FF24902B460055FBA2 /* DetailView.swift */; };
 		87B7C32824901A6C009E47D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7C32724901A6C009E47D8 /* AppDelegate.swift */; };
 		87B7C32A24901A6C009E47D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7C32924901A6C009E47D8 /* SceneDelegate.swift */; };
 		87B7C32D24901A6C009E47D8 /* PokedexApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87B7C32B24901A6C009E47D8 /* PokedexApp.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		874915FF24902B460055FBA2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		87B7C32424901A6C009E47D8 /* PokedexApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokedexApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B7C32724901A6C009E47D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87B7C32924901A6C009E47D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				87B7C32E24901A6C009E47D8 /* ContentView.swift */,
+				874915FF24902B460055FBA2 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B7C34424901B42009E47D8 /* NetworkManager.swift in Sources */,
+				8749160024902B460055FBA2 /* DetailView.swift in Sources */,
 				87B7C34524901B42009E47D8 /* K.swift in Sources */,
 				87B7C32824901A6C009E47D8 /* AppDelegate.swift in Sources */,
 				87B7C32D24901A6C009E47D8 /* PokedexApp.xcdatamodeld in Sources */,

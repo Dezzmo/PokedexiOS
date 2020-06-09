@@ -11,27 +11,45 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var networkManager = NetworkManager()
+    @State var selectedType = 0
     
     var body: some View {
         NavigationView{
             TabView{
+                // My pokemon (coreData)
                 Text("My Pokemon")
                     .tabItem{
                         Image("pokeball")
                 }
-                List(self.networkManager.pokemons) { pokes in
-                    Text(pokes.name.capitalizingFirstLetter())
+                // Navigation link hast to be fixed
+                NavigationLink(destination: DetailView(), label: {
+                    List(self.networkManager.pokemons) { pokes in
+                        Text(pokes.name.capitalizingFirstLetter())
+                    }
+                    })
+                    .tabItem{
+                        Image("pokedex")
+                    }
+                    
+                // typesearch
+                VStack{
+                Picker(selection: $selectedType, label: Text("Type")) {
+                    ForEach(0 ..< K.types.count) {
+                        Text(K.types[$0])
+                    }
+                    }
+                    Button(action: {
+                        print(K.types[self.selectedType])
+                    }) {
+                        Text("search")
                 }
-                .tabItem{
-                    Image("pokedex")
                 }
-                Text("TypeSearch")
                     .tabItem{
                         Image("fire")
                 }
                 
-                
             }
+            
             .navigationBarTitle("PokéDEX")
             .onAppear(){
                 self.networkManager.fetchData()
