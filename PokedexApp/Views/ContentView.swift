@@ -29,7 +29,7 @@ struct ContentView: View {
                     }
                 Text("My Pokemon")
                                    .tabItem{
-                                       Image("gaming2")
+                                       Image("pokeball")
                                }
                     
                 // typesearch
