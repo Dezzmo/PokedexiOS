@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87282CBF249182AC00264829 /* TypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87282CBE249182AC00264829 /* TypeView.swift */; };
 		8749160024902B460055FBA2 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874915FF24902B460055FBA2 /* DetailView.swift */; };
 		87B7C32824901A6C009E47D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7C32724901A6C009E47D8 /* AppDelegate.swift */; };
 		87B7C32A24901A6C009E47D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B7C32924901A6C009E47D8 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		87282CBE249182AC00264829 /* TypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeView.swift; sourceTree = "<group>"; };
 		874915FF24902B460055FBA2 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		87B7C32424901A6C009E47D8 /* PokedexApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokedexApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B7C32724901A6C009E47D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				87B7C32E24901A6C009E47D8 /* ContentView.swift */,
 				874915FF24902B460055FBA2 /* DetailView.swift */,
+				87282CBE249182AC00264829 /* TypeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				87B7C34424901B42009E47D8 /* NetworkManager.swift in Sources */,
 				8749160024902B460055FBA2 /* DetailView.swift in Sources */,
 				87B7C34524901B42009E47D8 /* K.swift in Sources */,
+				87282CBF249182AC00264829 /* TypeView.swift in Sources */,
 				87B7C32824901A6C009E47D8 /* AppDelegate.swift in Sources */,
 				87B7C32D24901A6C009E47D8 /* PokedexApp.xcdatamodeld in Sources */,
 				87B7C32F24901A6C009E47D8 /* ContentView.swift in Sources */,

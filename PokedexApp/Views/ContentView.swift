@@ -38,11 +38,10 @@ struct ContentView: View {
                         Text(K.types[$0])
                     }
                     }
-                    Button(action: {
-                        print(K.types[self.selectedType])
-                    }) {
-                        Text("search")
-                }
+                    
+                    NavigationLink(destination: TypeView(type: selectedType + 1 )) {
+                        Image(systemName: "magnifyingglass.circle")
+                    }
                 }
                     .tabItem{
                         Image("fire")
