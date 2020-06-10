@@ -16,11 +16,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             TabView{
-                // My pokemon (coreData)
-                Text("My Pokemon")
-                    .tabItem{
-                        Image("pokeball")
-                }
+             
+               
                 // Navigation link hast to be fixed
                 NavigationLink(destination: DetailView(), label: {
                     List(self.networkManager.pokemons) { pokes in
@@ -30,8 +27,14 @@ struct ContentView: View {
                     .tabItem{
                         Image("pokedex")
                     }
+                Text("My Pokemon")
+                                   .tabItem{
+                                       Image("gaming2")
+                               }
                     
                 // typesearch
+               
+                    
                 VStack{
                 Picker(selection: $selectedType, label: Text("Type")) {
                     ForEach(0 ..< K.types.count) {
@@ -42,7 +45,15 @@ struct ContentView: View {
                     NavigationLink(destination: TypeView(type: selectedType + 1 )) {
                         Image(systemName: "magnifyingglass.circle")
                     }
-                }
+                    }
+                     
+                
+            .background(
+                Image("pokemontypes")
+               
+                )
+                    
+                    
                     .tabItem{
                         Image("fire")
                 }

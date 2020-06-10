@@ -14,14 +14,15 @@ struct TypeView: View {
     var type = 0
     
     var body: some View {
-        
             List(self.networkManager.type.pokemon) { pokes in
                 Text(pokes.pokemon.name.capitalizingFirstLetter())
             }
+        
             .onAppear(){
                 self.networkManager.fetchType(type: self.type)
             }
-            .navigationBarTitle(K.types[type-1])
+            .navigationBarTitle("\(K.types[type-1]) Pokémon")
+    
     }
 }
 
